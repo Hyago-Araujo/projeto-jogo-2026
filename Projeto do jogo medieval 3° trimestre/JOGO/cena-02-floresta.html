@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last Stone - Floresta</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/jogo.css">
+</head>
+<body>
+
+    <div id="hud">
+        <div id="vida-container">
+            <div id="vida-info">
+                <span>❤️ VIDA</span>
+                <span id="vida-texto">100 / 100</span>
+            </div>
+
+            <div id="vida-fundo">
+                <div id="vida-barra"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hud-inimigo">
+        <div id="inimigo-info">
+            <span id="nome-inimigo">GOBLIN</span>
+            <span id="vida-inimigo-texto">100 / 100</span>
+        </div>
+
+        <div id="vida-inimigo-fundo">
+            <div id="vida-inimigo-barra"></div>
+        </div>
+    </div>
+
+    <div id="jogo">
+
+        <div id="cenario">
+
+            <img
+                src="../assets/cenarios/cenario-02-floresta/floresta.png"
+                class="fundo-cenario"
+                alt=""
+            >
+
+            <img
+                id="personagem"
+                class="personagem"
+                src="../assets/personagens/cacador/animacoes/idle/idle-01.png"
+                alt="Caçador"
+            >
+
+            <img
+                id="inimigo-goblin"
+                class="inimigo-goblin"
+                src="../assets/personagens/inimigos/goblin/idle/idle-01.png"
+                alt="Goblin"
+            >
+
+        </div>
+
+    </div>
+
+    <div id="dialogo">
+
+        <div id="dialogo-personagem">
+            Caçador
+        </div>
+
+        <div id="dialogo-texto">
+            As ruínas devem estar por aqui.
+        </div>
+
+        <div id="dialogo-continuar">
+            Pressione E para continuar
+        </div>
+
+    </div>
+
+    <div id="transicao"></div>
+
+    <script src="../java-script/sistema/animacao.js"></script>
+    <script src="../java-script/sistema/jogo.js"></script>
+    <script src="../java-script/sistema/inimigo-goblin.js"></script>
+
+</body>
+</html>

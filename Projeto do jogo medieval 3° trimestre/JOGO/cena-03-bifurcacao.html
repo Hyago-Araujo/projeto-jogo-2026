@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last Stone - Bifurcação</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/jogo.css">
+
+    <style>
+        #escolha-bifurcacao {
+            position: fixed;
+            left: 50%;
+            bottom: 90px;
+            transform: translateX(-50%);
+            display: none;
+            gap: 20px;
+            z-index: 1100;
+        }
+
+        #escolha-bifurcacao.ativo {
+            display: flex;
+        }
+
+        #escolha-bifurcacao button {
+            min-width: 180px;
+            padding: 14px 24px;
+            border: 3px solid #ffffff;
+            border-radius: 8px;
+            background: #123f6b;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 0 rgba(0, 0, 0, 0.35);
+        }
+
+        #escolha-bifurcacao button:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="hud">
+        <div id="vida-container">
+            <div id="vida-info">
+                <span>❤️ VIDA</span>
+                <span id="vida-texto">100 / 100</span>
+            </div>
+
+            <div id="vida-fundo">
+                <div id="vida-barra"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="jogo">
+
+        <div id="cenario">
+
+            <img
+                src="../assets/cenarios/cenario-03-bifurcacao/bifurcacao.png"
+                class="fundo-cenario"
+                alt=""
+            >
+
+            <img
+                id="personagem"
+                class="personagem"
+                src="../assets/personagens/cacador/animacoes/idle/idle-01.png"
+                alt="Caçador"
+            >
+
+        </div>
+
+    </div>
+
+    <div id="dialogo">
+
+        <div id="dialogo-personagem">
+            Caçador
+        </div>
+
+        <div id="dialogo-texto">
+            O caminho se divide...
+        </div>
+
+        <div id="dialogo-continuar">
+            Pressione E para continuar
+        </div>
+
+    </div>
+
+    <div id="escolha-bifurcacao">
+        <button type="button" onclick="escolherCaminho('lago')">
+            LAGO
+        </button>
+
+        <button type="button" onclick="escolherCaminho('montanhas')">
+            MONTANHAS
+        </button>
+    </div>
+
+    <div id="transicao"></div>
+
+    <script src="../java-script/sistema/animacao.js"></script>
+    <script src="../java-script/sistema/jogo.js"></script>
+
+</body>
+</html>

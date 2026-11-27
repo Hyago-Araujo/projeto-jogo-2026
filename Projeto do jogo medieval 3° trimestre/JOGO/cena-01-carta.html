@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Last Stone - Cidade</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/jogo.css">
+</head>
+
+<body>
+
+    <div id="hud">
+
+        <div id="vida-container">
+
+            <div id="vida-info">
+                <span>❤️ VIDA</span>
+                <span id="vida-texto">100 / 100</span>
+            </div>
+
+            <div id="vida-fundo">
+                <div id="vida-barra"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="jogo">
+
+        <div id="cenario">
+
+            <img
+                src="../assets/cenarios/cenario-01-cidade/cidade.png"
+                class="fundo-cenario"
+                alt=""
+            >
+
+            <img
+                id="npc-vendedor"
+                class="npc-vendedor"
+                src="../assets/personagens/npc/vendedor/idle/vendedor-01.png"
+                alt="Vendedor"
+            >
+
+            <img
+                id="personagem"
+                class="personagem"
+                src="../assets/personagens/cacador/animacoes/idle/idle-01.png"
+                alt="Caçador"
+            >
+
+            <div id="interacao-vendedor">
+                <span>⬆</span>
+                <span>E — CONVERSAR</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="dialogo">
+
+        <div id="dialogo-personagem">
+            Vendedor
+        </div>
+
+        <div id="dialogo-texto">
+            Você é o caçador que veio de fora da cidade?
+        </div>
+
+        <div id="dialogo-continuar">
+            Pressione E para continuar
+        </div>
+
+    </div>
+
+    <div id="transicao"></div>
+
+    <script src="../java-script/sistema/animacao.js"></script>
+    <script src="../java-script/sistema/jogo.js"></script>
+
+</body>
+</html>

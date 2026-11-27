@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-deep: #0d1210;
+    --bg-mid: #18231d;
+    --stone: #3a4a42;
+    --torch: #e8a33d;
+    --text-light: #e9e3d3;
+    --text-muted: #8fa39a;
+    --font-body: 'Courier New', monospace;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--font-body);
+    color: var(--text-light);
+    background: var(--bg-deep);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,58 @@
+.tela-menu {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding-bottom: 80px;
+
+    background-image:
+        linear-gradient(
+            rgba(13, 18, 16, 0.35),
+            rgba(13, 18, 16, 0.65)
+        ),
+        url("../assets/menu/fundo-menu.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    width: 280px;
+}
+
+.botao-menu {
+    padding: 16px 20px;
+
+    text-align: center;
+
+    border: 2px solid var(--torch);
+
+    background: rgba(13, 18, 16, 0.85);
+
+    color: var(--text-light);
+
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.botao-menu:hover {
+    background: var(--torch);
+    color: var(--bg-deep);
+
+    transform: scale(1.03);
+}
